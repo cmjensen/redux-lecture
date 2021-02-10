@@ -19,8 +19,8 @@ class App extends Component{
   render(){
     return (
       <div className="App">
-        <input name="username" type="text" value={this.state.username} placeholder="Username"/>
-        <input name="email" type="text" value={this.state.email} placeholder="Email"/>
+        <input onChange={ e => this.changeHandler(e)} name="username" type="text" value={this.state.username} placeholder="Username"/>
+        <input onChange={ e => this.changeHandler(e)} name="email" type="text" value={this.state.email} placeholder="Email"/>
       </div>
     );
   }
